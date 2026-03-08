@@ -28,7 +28,7 @@ jobs:
         python train_model.py
     - name: Check Streamlit App
       run: |
-        streamlit run app.py --server.headless true & sleep 10
+        streamlit run app.py --server.headless true & sleep 100000
 
     - name: Success message
       run: echo "Pipeline executed successfully!"
