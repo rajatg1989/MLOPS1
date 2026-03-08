@@ -26,6 +26,9 @@ jobs:
     - name: Run basic test
       run: |
         python train_model.py
+    - name: Check Streamlit App
+      run: |
+        streamlit run app.py --server.headless true & sleep 10
 
     - name: Success message
       run: echo "Pipeline executed successfully!"
